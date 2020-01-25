@@ -1,5 +1,6 @@
 const particles = [];
-const particlesLengthMax = Math.floor(window.innerWidth / 10);
+const particlesLengthMax = window.innerWidth < 500 ? 15 : Math.floor(window.innerWidth / 10);
+
 
 function setup() {
     createCanvas(window.innerWidth, window.innerHeight);
